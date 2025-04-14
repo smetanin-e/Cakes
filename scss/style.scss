@@ -26,6 +26,7 @@ body {
     padding-block: 30px;
     border-radius: 8px;
 
+    color: #2E363E;
     background-color: #FED84C;
     font-size: 18px;
     font-weight: 500;
@@ -56,9 +57,19 @@ body {
     object-fit: cover;
 }
 
+.lbl {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 18px;
+    padding-block: 10px;
+    border-radius: 5px;
+    background: #F2F6FA;
+}
 
-/*================================================*/
-.block {
+
+/*===================Catalog=============================*/
+.catalog {
 
     &__container {
     }
@@ -161,4 +172,79 @@ body {
     }
 
 }
+/*================================================*/
 
+
+
+.main {
+    position: relative;
+
+    &__bg {
+    z-index: -1;
+    }
+
+    &__header {
+    }
+
+    &__body {
+        padding-block-start: 188px;
+        padding-block-end: 525px;
+    }
+}
+.header {
+
+    &__container {
+    }
+}
+.header-body {
+
+    &__name {
+    }
+
+    &__contacts {
+    }
+}
+.contacts-header {
+
+    &__adress {
+    }
+
+    &__contact {
+    }
+}
+.contact-header {
+
+    &__phone {
+    }
+
+    &__times {
+    }
+}
+.body-main {
+
+    &__container {
+    }
+
+    &__content {
+    }
+}
+.content-body {
+
+    &__label {
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+
+    &__btn-and-text {
+    }
+
+    &__button {
+    }
+
+    &__text {
+    }
+}
