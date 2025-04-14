@@ -1,0 +1,164 @@
+@import"_nullstyle.scss";
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: #2E363E;
+}
+
+
+[class*="__container"] {
+    max-inline-size: 1210px; /* = 1180 + 15 + 15 */
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 50px;
+    padding-block: 30px;
+    border-radius: 8px;
+
+    background-color: #FED84C;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.52;
+    
+    transition: background-color, 0.3s;
+    
+    &:hover {
+        background-color: #f8c819;
+    }
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+.btn--small{
+    padding-inline: 40px;
+    padding-block: 20px;
+}
+
+.image {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*================================================*/
+.block {
+
+    &__container {
+    }
+
+    &__title {
+        margin-block-end: 80px;
+        text-align: center;
+
+        @media(max-width: 860px){
+            margin-block-end: 40px;
+            font-size: 32px;
+        }
+        @media(max-width: 640px){
+            margin-block-end: 20px;
+            font-size: 24px;
+        }
+    }
+
+    &__body {
+        
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        @media(max-width: 860px){
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width: 640px){
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.cards {
+
+    &__item {
+        border: 1px solid rgb(242, 246, 250);
+        border-radius: 10px;
+    }
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 100%;
+        min-height: 245px;
+        position: relative;
+    }
+
+    &__body {
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+
+        padding-inline: 44px;
+        padding-block: 50px;
+
+        @media(max-width: 860px){
+            padding-inline: 30px;
+            padding-block: 40px;
+        }
+        @media(max-width: 640px){
+            padding-inline: 15px;
+            padding-block: 20px;
+        }
+    }
+
+    &__name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.43;
+        margin-inline-end: 12px;
+    }
+
+    &__description {
+        flex-grow: 1;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+
+        padding-block-end: 24px;
+
+        @media(max-width: 640px){
+            padding-block-end: 12px;
+        }
+    }
+
+    &__price {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-block-end: 14px;
+    }
+
+}
+
