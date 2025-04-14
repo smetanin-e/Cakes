@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -213,3 +214,103 @@ body {
   padding-block-start: 188px;
   padding-block-end: 525px;
 }
+
+.header {
+  padding-block-start: 37px;
+  padding-block-end: 30px;
+  color: #fff;
+  border-bottom: 1px solid #7E868E;
+}
+.header-body {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+}
+.header-body__name {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+}
+.header-body__contacts {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.contacts-header__adress {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.adress-block {
+  display: flex;
+  gap: 12px;
+}
+.adress-block:active {
+  color: #f8c819;
+}
+.adress-block:active svg path {
+  fill: #f8c819;
+}
+
+.header-contact {
+  display: flex;
+  gap: 15px;
+  /*============разобраться с ACTIVE==============*/
+}
+.header-contact__icon {
+  display: block;
+  margin-block-start: 7px;
+}
+.header-contact__phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.52;
+  text-align: right;
+}
+.header-contact__times {
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
+}
+.header-contact:active {
+  color: #19f876;
+}
+.header-contact:active svg path {
+  fill: #19f863;
+}
+
+@media (min-width: 1023.99px) {
+  .header-contact:hover,
+  .adress-block:hover {
+    color: #FED84C;
+  }
+  .header-contact:hover svg path,
+  .adress-block:hover svg path {
+    fill: #FED84C;
+  }
+}
+@media (max-width: 679.99px) {
+  .header {
+    padding-block: 15px;
+  }
+  .header-body__contacts {
+    gap: 20px;
+  }
+  .adress-block__icon {
+    width: 41px;
+    height: 41px;
+  }
+  .header-contact__icon {
+    margin-block: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .header-contact__text,
+  .adress-block__text {
+    display: none;
+  }
+}
+/**/

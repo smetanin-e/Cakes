@@ -192,34 +192,163 @@ body {
     }
 }
 .header {
+    padding-block-start: 37px;
+    padding-block-end: 30px;
+    color: #fff;
+    border-bottom: 1px solid #7E868E;
 
     &__container {
     }
 }
 .header-body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 15px;
+    
 
     &__name {
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 143%;
+        letter-spacing: 0%;
+        display: flex;
+        align-items: center;
+        
     }
 
     &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 70px;
     }
 }
 .contacts-header {
 
     &__adress {
+        font-size: 12px;
+        line-height: 1.5;
     }
 
     &__contact {
     }
 }
-.contact-header {
+
+.adress-block {
+    display: flex;
+    gap: 12px;
+
+    &__icon {
+        
+    }
+
+    &__text {
+    }
+
+    
+
+    &:active{
+        color: #f8c819;
+        
+        svg  path {
+            fill:#f8c819;
+        }
+           
+    }
+    
+}
+
+.header-contact {
+    display: flex;
+    gap: 15px;
+    
+
+    &__icon {
+       display: block;
+       margin-block-start: 7px;
+
+       
+       
+    }
+
+    &__text {
+    }
 
     &__phone {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.52;
+        text-align: right;
+        
     }
 
     &__times {
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: right;
+    }
+/*============разобраться с ACTIVE==============*/
+    &:active{
+        color: #19f876;
+        
+        svg  path {
+            fill:#19f863;
+        }
+           
     }
 }
+
+@media(min-width:1023.99px){
+
+    .header-contact,
+    .adress-block  {
+        &:hover {
+            color: #FED84C;
+            
+            svg  path {
+                fill:#FED84C
+            }
+               
+        }
+    }
+    
+}
+
+@media(max-width:679.99px){
+    .header {
+        padding-block:15px;
+    }
+
+    .header-body {
+        &__contacts {
+            gap: 20px;
+        }
+    }
+
+    .adress-block {
+        &__icon {
+            
+            width: 41px;
+            height: 41px;
+        }
+    }
+
+    .header-contact{
+        &__icon {
+            margin-block: 0;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .header-contact,
+    .adress-block {
+        &__text {
+            display: none;
+        }
+    }
+}
+
+
 .body-main {
 
     &__container {
@@ -248,3 +377,47 @@ body {
     &__text {
     }
 }
+
+
+
+
+
+
+
+
+/**/
+.main {
+
+    &__header {
+    }
+}
+.header {
+
+    &__container {
+    }
+}
+.header-body {
+
+    &__name {
+    }
+
+    &__contacts {
+    }
+}
+.contacts-header {
+
+    &__adress {
+    }
+
+    &__contact {
+    }
+}
+.adress-block {
+
+    &__icon {
+    }
+
+    &__text {
+    }
+}
+
