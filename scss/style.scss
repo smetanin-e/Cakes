@@ -71,9 +71,6 @@ body {
 /*===================Catalog=============================*/
 .catalog {
 
-    &__container {
-    }
-
     &__title {
         margin-block-end: 80px;
         text-align: center;
@@ -82,6 +79,7 @@ body {
             margin-block-end: 40px;
             font-size: 32px;
         }
+
         @media(max-width: 640px){
             margin-block-end: 20px;
             font-size: 24px;
@@ -89,8 +87,6 @@ body {
     }
 
     &__body {
-        
-
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
@@ -98,6 +94,7 @@ body {
         @media(max-width: 860px){
             grid-template-columns: 1fr 1fr;
         }
+
         @media(max-width: 640px){
             grid-template-columns: 1fr;
         }
@@ -126,17 +123,16 @@ body {
 
     &__body {
         flex-grow: 1;
-
         display: flex;
         flex-direction: column;
-
         padding-inline: 44px;
         padding-block: 50px;
 
-        @media(max-width: 860px){
-            padding-inline: 30px;
+        @media(max-width: 1024px){
+            padding-inline: 20px;
             padding-block: 40px;
         }
+
         @media(max-width: 640px){
             padding-inline: 15px;
             padding-block: 20px;
@@ -152,11 +148,9 @@ body {
 
     &__description {
         flex-grow: 1;
-
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-
         padding-block-end: 24px;
 
         @media(max-width: 640px){
@@ -180,26 +174,35 @@ body {
     position: relative;
 
     &__bg {
-    z-index: -1;
-    }
+    z-index: -2;
 
-    &__header {
+        @media(max-width: 860px){
+            filter: brightness(40%);
+        }
     }
 
     &__body {
         padding-block-start: 188px;
         padding-block-end: 525px;
+
+        @media(max-width: 860px){
+            padding-block-start: 60px;
+            padding-block-end: 150px;
+        }
+        @media(max-width: 680px){
+            padding-block-start: 50px;
+            padding-block-end: 60px;
+        }
     }
 }
+
 .header {
     padding-block-start: 37px;
     padding-block-end: 30px;
     color: #fff;
     border-bottom: 1px solid #7E868E;
-
-    &__container {
-    }
 }
+
 .header-body {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -213,7 +216,6 @@ body {
         letter-spacing: 0%;
         display: flex;
         align-items: center;
-        
     }
 
     &__contacts {
@@ -228,21 +230,12 @@ body {
         font-size: 12px;
         line-height: 1.5;
     }
-
-    &__contact {
-    }
 }
 
 .adress-block {
     display: flex;
     gap: 12px;
 
-    &__icon {
-        
-    }
-
-    &__text {
-    }
     @media(min-width:1023.99px){
         &:hover {
             color: #FED84C;
@@ -268,14 +261,10 @@ body {
 .header-contact {
     display: flex;
     gap: 15px;
-    
 
     &__icon {
        display: block;
        margin-block-start: 7px;
-    }
-
-    &__text {
     }
 
     &__phone {
@@ -351,35 +340,71 @@ body {
     }
 }
 
-
-.body-main {
-
-    &__container {
-    }
-
-    &__content {
-    }
-}
 .content-body {
+    max-width: 647px;
 
-    &__label {
+    @media(max-width: 860px){
+        max-width: 480px;
     }
-
+    
     &__title {
+        padding-block: 24px;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        color: #fff;
+
+        @media(max-width: 860px){
+            font-size: 40px;
+        }
+
+        @media(max-width: 680px){
+            font-size: 32px;
+            line-height: 1.5;
+        }
     }
 
     &__subtitle {
+        padding-block-end: 40px;
+        font-size: 24px;
+        line-height: 1.43;
+        color: #fff;
+
+        @media(max-width: 860px){
+            font-size: 18px;
+        }
+
+        @media(max-width: 680px){
+            font-size: 14px;
+        }
     }
 
     &__btn-and-text {
-    }
+        display: flex;
+        gap: 20px;
+        align-items: center;
 
-    &__button {
+        @media(max-width: 860px){
+            flex-direction: column;
+            align-items: start;
+            
+        }
     }
 
     &__text {
+        max-width: 150px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 1.6;
+
+        @media(max-width: 860px){
+            max-width: 100%;
+        }
     }
 }
+
+/*================================================*/
 
 
 
