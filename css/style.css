@@ -120,7 +120,7 @@ body {
 }
 @media (max-width: 860px) {
   .catalog__title {
-    margin-block-end: 40px;
+    margin-block: 40px;
     font-size: 32px;
   }
 }
