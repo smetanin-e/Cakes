@@ -243,14 +243,22 @@ body {
 
     &__text {
     }
-
-    
+    @media(min-width:1023.99px){
+        &:hover {
+            color: #FED84C;
+            
+            svg  path {
+                fill:#FED84C
+            }
+               
+        }
+    }
 
     &:active{
-        color: #f8c819;
+        color: #f8c819;   
         
         svg  path {
-            fill:#f8c819;
+            fill:#f8c819;   
         }
            
     }
@@ -265,9 +273,6 @@ body {
     &__icon {
        display: block;
        margin-block-start: 7px;
-
-       
-       
     }
 
     &__text {
@@ -278,7 +283,6 @@ body {
         font-weight: 700;
         line-height: 1.52;
         text-align: right;
-        
     }
 
     &__times {
@@ -286,21 +290,8 @@ body {
         line-height: 1.5;
         text-align: right;
     }
-/*============разобраться с ACTIVE==============*/
-    &:active{
-        color: #19f876;
-        
-        svg  path {
-            fill:#19f863;
-        }
-           
-    }
-}
 
-@media(min-width:1023.99px){
-
-    .header-contact,
-    .adress-block  {
+    @media(min-width:1023.99px){
         &:hover {
             color: #FED84C;
             
@@ -311,7 +302,16 @@ body {
         }
     }
     
+    &:active{
+        color: #f8c819;
+        
+        svg  path {
+            fill:#f8c819;
+        }
+           
+    }
 }
+
 
 @media(max-width:679.99px){
     .header {
@@ -322,11 +322,14 @@ body {
         &__contacts {
             gap: 20px;
         }
+
+        &__name {
+            font-size: 18px;
+        }
     }
 
     .adress-block {
         &__icon {
-            
             width: 41px;
             height: 41px;
         }
@@ -384,40 +387,4 @@ body {
 
 
 
-
-/**/
-.main {
-
-    &__header {
-    }
-}
-.header {
-
-    &__container {
-    }
-}
-.header-body {
-
-    &__name {
-    }
-
-    &__contacts {
-    }
-}
-.contacts-header {
-
-    &__adress {
-    }
-
-    &__contact {
-    }
-}
-.adress-block {
-
-    &__icon {
-    }
-
-    &__text {
-    }
-}
 
