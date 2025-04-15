@@ -110,6 +110,10 @@ body {
 }
 
 /*===================Catalog=============================*/
+.catalog {
+  position: relative;
+  overflow: hidden;
+}
 .catalog__title {
   margin-block-end: 80px;
   text-align: center;
@@ -142,9 +146,49 @@ body {
   }
 }
 
+.cards {
+  position: relative;
+}
 .cards__item {
   border: 1px solid rgb(242, 246, 250);
   border-radius: 10px;
+}
+.cards .decor {
+  display: none;
+}
+@media (min-width: 1210px) {
+  .cards::before {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 174px;
+    top: 130px;
+    left: -110px;
+    background: url("../img/berry.png") 0 0/cover no-repeat;
+    z-index: 2;
+  }
+  .cards::after {
+    position: absolute;
+    content: "";
+    width: 161px;
+    height: 167px;
+    top: 50%;
+    right: -120px;
+    background: url("../img/leaf.png") 0 0/cover no-repeat;
+    z-index: 2;
+  }
+  .cards .decor {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 109px;
+    height: 113px;
+    bottom: 450px;
+    left: -100px;
+    transform: rotate(-90deg);
+    background: url("../img/leaf.png") 0 0/cover no-repeat;
+    z-index: 2;
+  }
 }
 
 .item-card {

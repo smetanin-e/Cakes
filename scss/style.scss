@@ -70,6 +70,8 @@ body {
 
 /*===================Catalog=============================*/
 .catalog {
+    position: relative;
+    overflow: hidden;
 
     &__title {
         margin-block-end: 80px;
@@ -102,11 +104,55 @@ body {
 }
 
 .cards {
+    position: relative;
+    
+    
 
     &__item {
         border: 1px solid rgb(242, 246, 250);
         border-radius: 10px;
     }
+    
+    .decor{
+        display: none;
+    }
+    @media(min-width: 1210px){
+        &::before{
+            position: absolute;
+            content: '';
+            width: 170px;
+            height: 174px;
+            top: 130px;
+            left: -110px;
+            background: url('../img/berry.png') 0 0/cover no-repeat;
+            z-index: 2;
+        }
+    
+        &::after{
+            position: absolute;
+            content: '';
+            width: 161px;
+            height: 167px;
+            top: 50%;
+            right: -120px;
+            background: url('../img/leaf.png') 0 0/cover no-repeat;
+            z-index: 2;
+        }
+    
+        .decor {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 109px;
+            height: 113px;
+            bottom: 450px;
+            left: -100px;
+            transform: rotate(-90deg);
+            background: url('../img/leaf.png') 0 0/cover no-repeat;
+            z-index: 2;
+        }
+    }
+    
 }
 
 .item-card {
