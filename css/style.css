@@ -107,6 +107,10 @@ body {
   padding-block: 10px;
   border-radius: 5px;
   background: #F2F6FA;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 10%;
 }
 
 /*===================Catalog=============================*/
@@ -120,7 +124,7 @@ body {
 }
 @media (max-width: 860px) {
   .catalog__title {
-    margin-block: 40px;
+    margin-block-end: 40px;
     font-size: 32px;
   }
 }
@@ -450,3 +454,54 @@ body {
 }
 
 /*================================================*/
+.order-from-mobile {
+  padding-block-start: 330px;
+  background: #081130;
+  position: relative;
+  display: flex;
+}
+.order-from-mobile::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 330px;
+  background: url(../img/01\ 1.png) 0 0/cover no-repeat;
+}
+.order-from-mobile::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 489px;
+  background: url(../img/02\ 1.png) 0 0/cover no-repeat;
+}
+.order-from-mobile__image {
+  position: relative;
+  width: 1090px;
+  height: 1034px;
+}
+.order-from-mobile__image img {
+  -o-object-position: 100%;
+     object-position: 100%;
+}
+.info-mobile-order__label {
+  margin-block-end: 24px;
+}
+.info-mobile-order__title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 60px;
+  margin-block-end: 24px;
+}
+.info-mobile-order__text {
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.43;
+  letter-spacing: -0.2px;
+  margin-block-end: 40px;
+}
