@@ -79,11 +79,15 @@ body {
 .catalog {
     position: relative;
     overflow: hidden;
-    margin-top: -55px;
+    margin-block-start: -57px;
+
+    @media(max-width: 860px){
+        margin-block-start: 50px;
+    }
 
     &__title {
         padding-block-start: 0px;
-        padding-block-end: 80px;
+        padding-block-end: 79px;
         text-align: center;
 
         @media(max-width: 860px){
@@ -129,10 +133,12 @@ body {
         &::before{
             position: absolute;
             content: '';
-            width: 170px;
-            height: 174px;
-            top: 130px;
-            left: -110px;
+            //width: 170px;
+            //height: 174px;
+            width: 250px;
+            height: 250px;
+            top: 80px;
+            left: -165px;
             background: url('../img/berry.png') 0 0/cover no-repeat;
             z-index: 2;
         }
@@ -169,7 +175,9 @@ body {
     flex-direction: column;
 
     &__image {
-        border-radius: 10px;
+       // border-radius: 10px;
+       border-start-start-radius: 10px;
+       border-start-end-radius: 10px;
         overflow: hidden;
         max-width: 100%;
         min-height: 245px;
@@ -181,7 +189,7 @@ body {
         display: flex;
         flex-direction: column;
         padding-inline: 44px;
-        padding-block: 50px;
+        padding-block: 48px;
 
         @media(max-width: 1024px){
             padding-inline: 20px;
@@ -198,7 +206,8 @@ body {
         font-size: 24px;
         font-weight: 700;
         line-height: 1.43;
-        margin-inline-end: 12px;
+        //margin-inline-end: 12px;
+        padding-block-end: 13px;
     }
 
     &__description {
@@ -206,7 +215,7 @@ body {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
-        padding-block-end: 24px;
+        padding-block-end: 23px;
 
         @media(max-width: 640px){
             padding-block-end: 12px;
@@ -217,45 +226,22 @@ body {
         font-size: 24px;
         font-weight: 500;
         line-height: 1.5;
-        padding-block-end: 14px;
+        padding-block-end: 16px;
     }
 
 }
 /*================================================*/
 
-
-
-.main {
-    position: relative;
-
-    &__bg {
-    z-index: -2;
-
-        @media(max-width: 860px){
-            filter: brightness(40%);
-        }
-    }
-
-    &__body {
-        padding-block-start: 188px;
-        padding-block-end: 525px;
-
-        @media(max-width: 860px){
-            padding-block-start: 60px;
-            padding-block-end: 150px;
-        }
-        @media(max-width: 680px){
-            padding-block-start: 50px;
-            padding-block-end: 60px;
-        }
-    }
-}
-
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding-block-start: 37px;
     padding-block-end: 30px;
     color: #fff;
     border-bottom: 1px solid #7E868E;
+    z-index: 2;
 }
 
 .header-body {
@@ -321,6 +307,7 @@ body {
     &__icon {
        display: block;
        margin-block-start: 5px;
+       margin-right: -2px; //pixel perfect
     }
 
     &__phone {
@@ -395,6 +382,35 @@ body {
         }
     }
 }
+
+
+
+.main {
+    position: relative;
+    padding-block-start: 118.5px;
+    &__bg {
+    z-index: -2;
+
+        @media(max-width: 860px){
+            filter: brightness(40%);
+        }
+    }
+
+    &__body {
+        padding-block-start: 188px;
+        padding-block-end: 525px;
+
+        @media(max-width: 860px){
+            padding-block-start: 60px;
+            padding-block-end: 150px;
+        }
+        @media(max-width: 680px){
+            padding-block-start: 50px;
+            padding-block-end: 60px;
+        }
+    }
+}
+
 
 .content-body {
     max-width: 647px;
@@ -508,7 +524,9 @@ body {
     &__image {
         position: relative;
         //min-height: 1034px;
-        padding-block: 53.86%;
+        //padding-block: 53.86%;
+        padding-block: 55%;
+        margin-inline-end: -30px;
        
         .image {
             object-position: right;
@@ -529,13 +547,15 @@ body {
     }
     
     &__content {
-        max-width: 590px;
+        max-width: 610px;
         //padding-inline-start: 84px;
-        padding-inline-start: 8.75%;
+        //padding-inline-start: 8.75%;
+        padding-inline-start: 11.7%;
         padding-inline-end: 15px;
 
         //padding-block-start: 109px;
-        padding-block-start: 11.355%;
+       // padding-block-start: 11.355%;
+        padding-block-start: 12%;
         padding-block-end: 35px;
         z-index: 1;
 
@@ -594,7 +614,8 @@ body {
     &__text {
         color: #fff;
         font-size: 21px;
-        line-height: 1.37;
+        //line-height: 1.37;
+        line-height: 1.4;
         letter-spacing: -0.2px;
         margin-block-end: 43px;
 
