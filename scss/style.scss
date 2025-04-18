@@ -469,7 +469,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    overflow:hidden;
     
 
     &::before {
@@ -537,6 +537,36 @@ body {
         padding-block-start: 11.355%;
         padding-block-end: 35px;
         z-index: 1;
+
+        position: relative;
+        
+        @media(min-width: 1210px){
+            &::before{
+                position: absolute;
+                content: '';
+                width: 220px;
+                height: 220px;
+                top: -25px;
+                right: -190px;
+                transform: rotate(-80deg);
+                background: url('../img/berry.png') 0 0/cover no-repeat;
+                z-index: 2;
+            }
+        
+            &::after{
+                position: absolute;
+                content: '';
+                width: 150px;
+                height: 150px;
+                top: 30px;
+                left: -660px;
+              
+                background: url('../img/leaf.png') 0 0/cover no-repeat;
+                z-index: 2;
+                transform: rotate(-90deg);
+            }
+        }
+
     }
 }
 .info-mobile-order {
