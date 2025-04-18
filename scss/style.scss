@@ -133,8 +133,6 @@ body {
         &::before{
             position: absolute;
             content: '';
-            //width: 170px;
-            //height: 174px;
             width: 250px;
             height: 250px;
             top: 80px;
@@ -525,7 +523,7 @@ body {
         position: relative;
         //min-height: 1034px;
         //padding-block: 53.86%;
-        padding-block: 55%;
+        padding-block: 55%; //pixel perfect
         margin-inline-end: -30px;
        
         .image {
@@ -550,12 +548,12 @@ body {
         max-width: 610px;
         //padding-inline-start: 84px;
         //padding-inline-start: 8.75%;
-        padding-inline-start: 11.7%;
+        padding-inline-start: 11.7%; //pixel perfect
         padding-inline-end: 15px;
 
         //padding-block-start: 109px;
        // padding-block-start: 11.355%;
-        padding-block-start: 12%;
+        padding-block-start: 12%; //pixel perfect
         padding-block-end: 35px;
         z-index: 1;
 
@@ -581,7 +579,6 @@ body {
                 height: 150px;
                 top: 30px;
                 left: -660px;
-              
                 background: url('../img/leaf.png') 0 0/cover no-repeat;
                 z-index: 2;
                 transform: rotate(-90deg);
@@ -618,7 +615,6 @@ body {
         line-height: 1.4;
         letter-spacing: -0.2px;
         margin-block-end: 43px;
-
         text-shadow: 1px 1px #081130; 
     }
 }
