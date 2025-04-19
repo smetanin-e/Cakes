@@ -92,12 +92,12 @@ body {
         text-align: center;
 
         @media(max-width: 860px){
-            margin-block-end: 40px;
+            padding-block-end: 30px;
             font-size: 32px;
         }
 
         @media(max-width: 640px){
-            margin-block-end: 20px;
+           
             font-size: 24px;
         }
     }
@@ -119,9 +119,7 @@ body {
 
 .cards {
     position: relative;
-    
-    
-
+ 
     &__item {
         border: 1px solid rgb(242, 246, 250);
         border-radius: 10px;
@@ -586,6 +584,11 @@ body {
             }
         }
 
+        @media(max-width: 860px){
+            padding-inline: 15px;
+            max-width: 100%;
+        }
+
     }
 }
 .info-mobile-order {
@@ -618,11 +621,148 @@ body {
         margin-block-end: 43px;
         text-shadow: 1px 1px #081130; 
     }
+
+    
 }
 
+/*================================================*/
 
+.confectionery {
+    padding-block-end: 12px;
+    overflow: hidden;
+    @media(max-width: 1210px){
+        margin-block-start: 15px;
+        br {
+            display: none;
+        }
+    }
 
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-inline-start: 10px;
+        @media(max-width: 1210px){
+            padding-inline-start: 15px;
+        }
 
+        @media(max-width: 860px){
+            grid-template-columns: 1fr;
+        }
+    }
 
+    &__image {
+        position: relative;
+        min-height: 804px;
+        display: flex;
+        align-items: end;
+        padding-block-end: 167px;
+       //pixel-perfect
+        .image {
+            left: -5px;
+            top: -5px;
+            @media(max-width: 860px){
+                top: 0;
+                left: 0;
+            }
+        }
+        
+        @media(max-width: 1210px){
+            padding-block-end: 20px;
+            justify-content: center;
+        }
+    }
 
+}
+.info-confectionery {
 
+    padding-block-start: 78px;
+    padding-inline-end: 20px;
+
+    @media(max-width: 860px){
+        padding-block-start: 40px;
+        padding-block-end: 55px;
+    }
+
+    &__label {
+        margin-block-end: 24px;
+    }
+
+    &__title {
+        margin-block-end: 34px;
+        line-height: 60.5px;
+    }
+
+    &__item {
+        position: relative;
+        padding-inline-start: 22px;
+        margin-block-end: 30px;
+
+        font-size: 18px;
+        line-height: 1.5;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 5px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #5D6AFB;
+        }
+    }
+
+    &__button {
+        margin-block-start: 21px;
+    }
+}
+
+.about-confectionery {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-inline-start: -85px;
+
+    @media(max-width: 1210px){
+        margin-inline-start: 0px;
+    }
+    &__name {
+        display: inline-block;
+        padding-inline: 20px;
+        padding-block: 15px;
+        color: #fff;
+        background: #2E363E;
+        border-radius: 5px;
+        transform: skew(-7deg);
+        span {
+            display: inline-flex;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: -0.3px;
+            
+            transform: skew(7deg);
+        }
+    }
+
+    &__job-title {
+        display: inline-flex;
+        padding-inline: 20px;
+        padding-block: 15px;
+        background: #F2F6FA;
+        border-end-start-radius: 5px;
+        border-end-end-radius: 5px;
+        transform: skew(-7deg);
+
+        span {
+            display: inline-block;
+            color: #2E363E;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-transform: uppercase;
+            transform: skew(7deg);
+        }
+    }
+}

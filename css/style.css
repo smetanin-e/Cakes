@@ -134,13 +134,12 @@ body {
 }
 @media (max-width: 860px) {
   .catalog__title {
-    margin-block-end: 40px;
+    padding-block-end: 30px;
     font-size: 32px;
   }
 }
 @media (max-width: 640px) {
   .catalog__title {
-    margin-block-end: 20px;
     font-size: 24px;
   }
 }
@@ -559,6 +558,12 @@ body {
     transform: rotate(-90deg);
   }
 }
+@media (max-width: 860px) {
+  .order-from-mobile__content {
+    padding-inline: 15px;
+    max-width: 100%;
+  }
+}
 
 .info-mobile-order__label {
   margin-block-end: 24px;
@@ -581,4 +586,141 @@ body {
   letter-spacing: -0.2px;
   margin-block-end: 43px;
   text-shadow: 1px 1px #081130;
+}
+
+/*================================================*/
+.confectionery {
+  padding-block-end: 12px;
+  overflow: hidden;
+}
+@media (max-width: 1210px) {
+  .confectionery {
+    margin-block-start: 15px;
+  }
+  .confectionery br {
+    display: none;
+  }
+}
+.confectionery__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline-start: 10px;
+}
+@media (max-width: 1210px) {
+  .confectionery__container {
+    padding-inline-start: 15px;
+  }
+}
+@media (max-width: 860px) {
+  .confectionery__container {
+    grid-template-columns: 1fr;
+  }
+}
+.confectionery__image {
+  position: relative;
+  min-height: 804px;
+  display: flex;
+  align-items: end;
+  padding-block-end: 167px;
+}
+.confectionery__image .image {
+  left: -5px;
+  top: -5px;
+}
+@media (max-width: 860px) {
+  .confectionery__image .image {
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 1210px) {
+  .confectionery__image {
+    padding-block-end: 20px;
+    justify-content: center;
+  }
+}
+
+.info-confectionery {
+  padding-block-start: 78px;
+  padding-inline-end: 20px;
+}
+@media (max-width: 860px) {
+  .info-confectionery {
+    padding-block-start: 40px;
+    padding-block-end: 55px;
+  }
+}
+.info-confectionery__label {
+  margin-block-end: 24px;
+}
+.info-confectionery__title {
+  margin-block-end: 34px;
+  line-height: 60.5px;
+}
+.info-confectionery__item {
+  position: relative;
+  padding-inline-start: 22px;
+  margin-block-end: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.info-confectionery__item::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5D6AFB;
+}
+.info-confectionery__button {
+  margin-block-start: 21px;
+}
+
+.about-confectionery {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline-start: -85px;
+}
+@media (max-width: 1210px) {
+  .about-confectionery {
+    margin-inline-start: 0px;
+  }
+}
+.about-confectionery__name {
+  display: inline-block;
+  padding-inline: 20px;
+  padding-block: 15px;
+  color: #fff;
+  background: #2E363E;
+  border-radius: 5px;
+  transform: skew(-7deg);
+}
+.about-confectionery__name span {
+  display: inline-flex;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.3px;
+  transform: skew(7deg);
+}
+.about-confectionery__job-title {
+  display: inline-flex;
+  padding-inline: 20px;
+  padding-block: 15px;
+  background: #F2F6FA;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  transform: skew(-7deg);
+}
+.about-confectionery__job-title span {
+  display: inline-block;
+  color: #2E363E;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: skew(7deg);
 }
