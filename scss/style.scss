@@ -1057,3 +1057,111 @@ body {
 
 }
 
+/*================================================*/
+
+.footer {
+
+    &__container {
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.33;
+        text-align: center;
+        margin-block-end: 12px;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 21px;
+        line-height: 1.43;
+        letter-spacing: -0.2px;
+        margin-block-end: 36px;
+    }
+
+    &__form {
+    }
+
+    &__links {
+    }
+
+    &__link {
+    }
+}
+.form-order {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 20px;
+
+    &__tel-inner {
+        flex: 1 1 50%;
+        max-width: 380px;
+        position: relative;
+        
+       svg{
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 14px;
+            top: 36px;
+            left: 31.5px;
+            background: url(/img/phone-input.svg) center / cover no-repeat;  
+        }
+        
+        
+        
+    }
+
+    &__phone {
+        width: 100%;
+        height: 86px;
+        font-size: 18px;
+        border-radius: 8px;
+        background: #F2F6FA;
+        padding-inline-start: 58px;
+        padding-inline-end: 30px;
+        &::placeholder{
+            color: #7E868E;
+            font-size: 15px;
+            line-height: 1.6;
+            
+        }
+
+       &:hover {
+        & + svg path {
+            fill: #2E363E;
+        }
+
+            &::placeholder {
+                color: #2E363E;
+            }
+            
+            
+        }
+        &:focus{
+            & + svg path {
+                fill: #2E363E;
+            }
+            
+            border: 1px solid #FED84C;
+        }
+            
+    }
+
+    &__button {
+        flex: 1 1 50%;
+        max-width: 380px;
+    }
+
+    &__agreement {
+    }
+
+
+    &__agreement-text {
+    }
+    &__agreement-link {
+    }
+}

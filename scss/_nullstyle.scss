@@ -23,6 +23,12 @@ ul li {
 	list-style: none;
 }
 
+input, button, textarea {
+    font-family: inherit;
+  }
+  :focus, :active {
+    outline: none;
+  }
 button {
 	background-color: transparent;
 }
