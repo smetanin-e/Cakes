@@ -1008,3 +1008,52 @@ body {
         scale: 0.8;
        }
 }
+
+/*================================================*/
+
+.galery {
+
+    &__container {
+        margin-block-end: 80px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-block-end: 13px;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.43;
+    }
+
+    &__images {
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    &__image {
+        //min-height: 444px;
+        padding-block: 11.563%;
+        position: relative;
+        width: calc((100% - 9px * 2) / 3);
+        
+        @media (max-width:860px){
+            width: calc((100% - 9px * 1) / 2);
+            padding-block: 20%;
+        }
+
+        @media (max-width:640px){
+            flex: 1 1 100%;
+            padding-block: 40%;
+        }
+
+        
+    }
+
+}
+
