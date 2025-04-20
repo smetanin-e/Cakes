@@ -3,25 +3,26 @@ const swiper = new Swiper('.slider-reviews', {
         nextEl: '.slider-reviews-button-next',
         prevEl: '.slider-reviews-button-prev',
       },
-      direction: 'horizontal',
+
+      speed: 900,
       loop: true,
-      spaceBetween: 0,
       centeredSlides: true,
-      setTransition: .2,
       slidesPerView: 1.75,
-      /*breakpoints: {
+
+      breakpoints: {
           1921: {
               slidesPerView: 'auto',
           },
+
+          1880: {
+            slidesPerView: 1.71,
+        },
           
-          1400: {
-              slidesPerView: 1.75,
-          },
-  
+
           0: {
               spaceBetween: 35,
               slidesPerView: 1,
           }
-      },*/
+      },
    
 });
