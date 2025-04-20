@@ -522,7 +522,7 @@ body {
     left: 0;
     width: 100%;
     height: 36.655%;
-    background: url(../img/02\ 1.png) 0 0/cover no-repeat;
+    background: url("img/02 1.png") 0 0/cover no-repeat;
   }
 }
 .order-from-mobile__content {
@@ -727,14 +727,34 @@ body {
 
 /*================================================*/
 .reviews {
-  padding-block-start: 306px;
+  padding-block-start: 250px;
   background: #081130;
   overflow: hidden;
+  position: relative;
 }
 .reviews__title {
-  margin-block-end: 80px;
+  margin-block-end: 82px;
   text-align: center;
   color: #fff;
+}
+.reviews::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 330px;
+  left: 0;
+  top: -54px;
+  background: url("/img/01 1.png") 0 0/cover no-repeat;
+}
+.reviews::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 284px;
+  left: 0;
+  bottom: 0;
+  background: url("/img/01 1.png") 0 0/cover no-repeat;
+  transform: rotate(180deg);
 }
 
 .slider-reviews {
@@ -755,7 +775,8 @@ body {
   }
 }
 
-.slide-reviews__container {
+.slide-reviews__item {
+  margin-left: -55px;
   width: 1180px;
   padding-inline: 143px;
   padding-block: 70px;
@@ -766,16 +787,40 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 54px;
+  position: relative;
+}
+.slide-reviews__item::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 220px;
+  right: -125px;
+  top: -40px;
+  background: url("/img/berry.png") 0 0/cover no-repeat;
+  transform: rotate(-90deg);
+}
+@media (max-width: 860px) {
+  .slide-reviews__item::after {
+    width: 150px;
+    height: 150px;
+    top: -20px;
+    right: 0;
+  }
+}
+@media (max-width: 1880px) {
+  .slide-reviews__item {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 1200px) {
-  .slide-reviews__container {
+  .slide-reviews__item {
     max-width: 100%;
     padding-inline: 80px;
     padding-block: 50px;
   }
 }
 @media (max-width: 860px) {
-  .slide-reviews__container {
+  .slide-reviews__item {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-inline: 20px;
@@ -790,12 +835,12 @@ body {
   content: "";
   width: 40px;
   height: 27.47px;
-  left: 0;
-  top: 6px;
+  left: -3px;
+  top: 5px;
   background: url("../img/quotes.png") 100% no-repeat;
 }
 .text-review__title {
-  padding-block-start: 64px;
+  padding-block-start: 65px;
   padding-block-end: 24px;
   font-size: 30px;
   font-weight: 500;

@@ -538,7 +538,7 @@ body {
                 width: 100%;
                 //height: 489px;
                 height: 36.655%;
-                background: url(../img/02\ 1.png) 0 0 /cover no-repeat;
+                background: url('img/02\ 1.png') 0 0 /cover no-repeat;
             }
         }
     }
@@ -770,14 +770,37 @@ body {
 /*================================================*/
 
 .reviews {
-    padding-block-start: 306px;
+    padding-block-start: 250px;
     background: #081130;
     overflow: hidden;
 
+    position: relative;
+
     &__title {
-        margin-block-end: 80px;
+        margin-block-end: 82px;
         text-align: center;
         color: #fff;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 330px;
+        left: 0;
+        top: -54px;
+        background: url("/img/01\ 1.png") 0 0/cover no-repeat;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 284px;
+        left: 0;
+        bottom: 0;
+        background: url("/img/01\ 1.png") 0 0/cover no-repeat;
+        transform: rotate(180deg);
     }
 }
 
@@ -801,8 +824,10 @@ body {
 }
 
 .slide-reviews {
-    
-    &__container {
+
+    &__item {
+        margin-left: -55px; //pixel perfect
+
         width: 1180px;
         padding-inline: 143px;
         padding-block: 70px;
@@ -815,6 +840,30 @@ body {
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 54px;
+
+        position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 220px;
+        height: 220px;
+        right: -125px;
+        top: -40px;
+        background: url('/img/berry.png') 0 0 /cover no-repeat;
+        transform: rotate(-90deg);
+
+        @media (max-width: 860px) {
+            width: 150px;
+            height: 150px;
+            top: -20px;
+            right: 0;
+           }
+    }
+
+        @media (max-width: 1880px) { //pixel perfect
+            margin: 0 auto; //pixel perfect
+        }
 
        @media (max-width: 1200px) {
         max-width: 100%;
@@ -838,13 +887,13 @@ body {
             content: '';
             width: 40px;
             height: 27.47px;
-            left: 0;
-            top: 6px;
+            left: -3px; //pixel perfect
+            top: 5px; //pixel perfect
             background: url('../img/quotes.png') 100% no-repeat;
         }
 
     &__title {
-        padding-block-start: 64px;
+        padding-block-start: 65px;
         padding-block-end: 24px;
 
         font-size: 30px;
