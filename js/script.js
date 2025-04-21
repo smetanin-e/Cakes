@@ -1,3 +1,5 @@
+'use strict';
+
 /*=========Slider Swiper============== */
 
 const swiper = new Swiper('.slider-reviews', {
@@ -32,5 +34,8 @@ const swiper = new Swiper('.slider-reviews', {
 
 
 /*=========Checkbox============== */
+
+
+
 
 /*=========/Checkbox============== */

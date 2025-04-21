@@ -1195,17 +1195,20 @@ body {
     }
 
     &__agreement {
-        flex: 1 1 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 7px;
-        color: #7E868E;
-        font-size: 11px;
-        line-height: 1.3;
-        padding-inline-start: 19px;
-        padding-block: 1px;
-        position: relative;
+        
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5px;
+        @media(max-width: 775px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__agreement-label {
+       display: grid;
+       grid-template-columns: 12px 1fr;
+       gap: 7px;
+       align-items: center;
         input {
             display: none;
         }
@@ -1223,13 +1226,15 @@ body {
             }
             
         }
+
     }
-
-
     &__agreement-text {
+        
+       
+        
     }
     &__agreement-link {
-        display: inline;
+        
         text-decoration: underline;
         &:hover {
             color: #2E363E;

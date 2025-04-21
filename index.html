@@ -492,9 +492,23 @@
                     </svg>
                 </label>
                 <button class="form-order__button btn" type="submit">Сделать заказ</button>
-                <label class="form-order__agreement --checked">
+
+                <div class="form-order__agreement">
+                    <label class="form-order__agreement-label --checked">
+                        <span></span>
+                        <input checked class="input-checkbox" type="checkbox" name="agree">
+                        <p class="form-order__agreement-text">
+                            Нажамая на кнопку, вы соглашаетесь с
+                        </p>
+                    </label>
+                    
+                    <a href="#" class="form-order__agreement-link">
+                        условиями обработки персональных данных
+                    </a>
+                </div>
+       <!--         <label class="form-order__agreement">
                     <span></span>
-                    <input checked type="checkbox" name="agree">
+                    <input checked class="input-checkbox" type="checkbox" name="agree">
                     <div class="form-order__agreement-text">
                         Нажамая на кнопку, вы соглашаетесь с
                         <a href="#" class="form-order__agreement-link">
@@ -502,6 +516,7 @@
                         </a>
                     </div>
                 </label>
+        -->
             </form>
         </div>
 

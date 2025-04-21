@@ -1111,32 +1111,34 @@ body {
   max-width: 380px;
 }
 .form-order__agreement {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
-  color: #7E868E;
-  font-size: 11px;
-  line-height: 1.3;
-  padding-inline-start: 19px;
-  padding-block: 1px;
-  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
 }
-.form-order__agreement input {
+@media (max-width: 775px) {
+  .form-order__agreement {
+    grid-template-columns: 1fr;
+  }
+}
+.form-order__agreement-label {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  gap: 7px;
+  align-items: center;
+}
+.form-order__agreement-label input {
   display: none;
 }
-.form-order__agreement span {
+.form-order__agreement-label span {
   flex: 0 0 12px;
   height: 12px;
   border-radius: 2px;
   background: #4A94FF;
 }
-.form-order__agreement:hover span {
+.form-order__agreement-label:hover span {
   background: #65a5fd;
 }
 .form-order__agreement-link {
-  display: inline;
   text-decoration: underline;
 }
 .form-order__agreement-link:hover {
