@@ -1060,8 +1060,31 @@ body {
 /*================================================*/
 
 .footer {
-
+    background: #081130;
+    padding-block-start: 300px;
+    padding-block-end: 80px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 330px;
+        left: 0;
+        top: 0;
+        background: url("/img/01\ 1.png") 0 0/cover no-repeat;
+    }
     &__container {
+        background: #fff;
+        padding-inline: 150px;
+        padding-block: 70px;
+        border-radius: 8px;
+
+        @media(max-width: 1200px){
+            padding-inline: 20px;
+        
+        }
+
+       
     }
 
     &__title {
@@ -1084,13 +1107,28 @@ body {
     }
 
     &__links {
+        padding-block: 80px;
+        margin-inline: auto;
+        display: flex;
+        max-width: 800px;
+        flex-wrap: wrap;
+        gap: 22px 43px;
+        color: #7E868E;
+        justify-content: center;
     }
 
     &__link {
+        font-size: 12px;
+        line-height: 1.5;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 .form-order {
-
+    
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1157,11 +1195,71 @@ body {
     }
 
     &__agreement {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        color: #7E868E;
+        font-size: 11px;
+        line-height: 1.3;
+        padding-inline-start: 19px;
+        padding-block: 1px;
+        position: relative;
+        input {
+            display: none;
+        }
+
+        span {
+            flex: 0 0 12px;
+            height: 12px;
+            border-radius: 2px;
+            background: #4A94FF;
+        }
+
+        &:hover {
+            span {
+                background: #65a5fd;
+            }
+            
+        }
     }
 
 
     &__agreement-text {
     }
     &__agreement-link {
+        display: inline;
+        text-decoration: underline;
+        &:hover {
+            color: #2E363E;
+        }
+    }
+}
+
+.--checked {
+    span {
+        background: #4A94FF;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 3px;
+            top: 5px;
+            left: 3.5px;
+            background: #fff;
+            transform: rotate(-45deg);
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 6px;
+            top: 2px;
+            left: 6.5px;
+            background: #fff;
+            transform: rotate(45deg);
+        }
     }
 }

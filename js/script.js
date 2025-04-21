@@ -1,3 +1,5 @@
+/*=========Slider Swiper============== */
+
 const swiper = new Swiper('.slider-reviews', {
     navigation: {
         nextEl: '.slider-reviews-button-next',
@@ -26,3 +28,9 @@ const swiper = new Swiper('.slider-reviews', {
       },
    
 });
+/*=========/Slider Swiper============== */
+
+
+/*=========Checkbox============== */
+
+/*=========/Checkbox============== */
