@@ -35,7 +35,27 @@ const swiper = new Swiper('.slider-reviews', {
 
 /*=========Checkbox============== */
 
+const checkboxLabel = document.querySelector('.form-order__agreement-label');
+const checkboxInput = document.querySelector('.input-checkbox');
 
+
+   if (checkboxInput.attributes['checked']) {
+    checkboxLabel.classList.add('--checked');
+   }
+   else {
+    checkboxLabel.classList.remove('--checked');
+   } 
+   
+   checkboxInput.addEventListener('click', function() {
+    if (checkboxInput.attributes['checked']) {
+        checkboxLabel.classList.remove('--checked');
+        checkboxInput.removeAttribute('checked');
+    } else {
+        checkboxLabel.classList.add('--checked');
+        checkboxInput.setAttribute('checked', 'checked');
+    }
+    
+});
 
 
 /*=========/Checkbox============== */
