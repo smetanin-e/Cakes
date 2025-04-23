@@ -494,7 +494,7 @@ body {
         width: 100%;
         //height: 330px;
         height: 24.737%;
-        background: url("../img/01\ 1.png") 0 0/cover no-repeat;
+        background: url("../img/down.png") 0 0/cover no-repeat;
     }
 
     &::after {
@@ -505,7 +505,7 @@ body {
         width: 100%;
         //height: 489px;
         height: 36.655%;
-        background: url("../img/02\ 1.png") 0 0 /cover no-repeat;
+        background: url("../img/up.png") 0 0 /cover no-repeat;
 
     }
 
@@ -538,7 +538,7 @@ body {
                 width: 100%;
                 //height: 489px;
                 height: 36.655%;
-                background: url('img/02\ 1.png') 0 0 /cover no-repeat;
+                background: url('../img/up.png') 0 0 /cover no-repeat;
             }
             &::before {
                 position: absolute;
@@ -547,7 +547,7 @@ body {
                 left: 0;
                 width: 100%;
                 height: 20%;
-                background: url("../img/01\ 1.png") 0 0/cover no-repeat;
+                background: url("../img/down.png") 0 0/cover no-repeat;
                 z-index: 2;
                 transform: rotate(180deg);
             }
@@ -607,7 +607,7 @@ body {
                 left: 0;
                 width: 100%;
                 height: 20%;
-                background: url("../img/01\ 1.png") 0 0/cover no-repeat;
+                background: url("../img/down.png") 0 0/cover no-repeat;
                 z-index: 2;
             }
         }
@@ -826,7 +826,7 @@ body {
         height: 330px;
         left: 0;
         top: -54px;
-        background: url("../img/01\ 1.png") 0 0/cover no-repeat;
+        background: url("../img/down.png") 0 0/cover no-repeat;
     }
 
     &::after {
@@ -836,7 +836,7 @@ body {
         height: 284px;
         left: 0;
         bottom: 0;
-        background: url("../img/01\ 1.png") 0 0/cover no-repeat;
+        background: url("../img/down.png") 0 0/cover no-repeat;
         transform: rotate(180deg);
     }
 }
@@ -1113,7 +1113,7 @@ body {
         height: 330px;
         left: 0;
         top: 0;
-        background: url("../img/01\ 1.png") 0 0/cover no-repeat;
+        background: url("../img/down.png") 0 0/cover no-repeat;
     }
     &__container {
         max-width: 1180px;
@@ -1355,7 +1355,7 @@ body {
         width: 12px;
         height: 12px;
         border-radius: 2px;
-        background: url("/img/check.png") center no-repeat;
+        background: url("../img/check.png") center no-repeat;
     }
 
 
