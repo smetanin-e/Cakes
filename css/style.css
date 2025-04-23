@@ -495,7 +495,7 @@ body {
   left: 0;
   width: 100%;
   height: 24.737%;
-  background: url(../img/01\ 1.png) 0 0/cover no-repeat;
+  background: url("../img/01 1.png") 0 0/cover no-repeat;
 }
 .order-from-mobile::after {
   position: absolute;
@@ -504,7 +504,7 @@ body {
   left: 0;
   width: 100%;
   height: 36.655%;
-  background: url(../img/02\ 1.png) 0 0/cover no-repeat;
+  background: url("../img/02 1.png") 0 0/cover no-repeat;
 }
 @media (max-width: 860px) {
   .order-from-mobile {
@@ -540,7 +540,7 @@ body {
     left: 0;
     width: 100%;
     height: 20%;
-    background: url(../img/01\ 1.png) 0 0/cover no-repeat;
+    background: url("../img/01 1.png") 0 0/cover no-repeat;
     z-index: 2;
     transform: rotate(180deg);
   }
@@ -591,7 +591,7 @@ body {
     left: 0;
     width: 100%;
     height: 20%;
-    background: url(../img/01\ 1.png) 0 0/cover no-repeat;
+    background: url("../img/01 1.png") 0 0/cover no-repeat;
     z-index: 2;
   }
 }
@@ -805,7 +805,7 @@ body {
   height: 330px;
   left: 0;
   top: -54px;
-  background: url("/img/01 1.png") 0 0/cover no-repeat;
+  background: url("../img/01 1.png") 0 0/cover no-repeat;
 }
 .reviews::after {
   position: absolute;
@@ -814,7 +814,7 @@ body {
   height: 284px;
   left: 0;
   bottom: 0;
-  background: url("/img/01 1.png") 0 0/cover no-repeat;
+  background: url("../img/01 1.png") 0 0/cover no-repeat;
   transform: rotate(180deg);
 }
 
@@ -857,7 +857,7 @@ body {
   height: 220px;
   right: -125px;
   top: -40px;
-  background: url("/img/berry.png") 0 0/cover no-repeat;
+  background: url("../img/berry.png") 0 0/cover no-repeat;
   transform: rotate(-90deg);
 }
 @media (max-width: 860px) {
@@ -977,7 +977,7 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url("/img/arrow.png") center no-repeat;
+  background: url("../img/arrow.png") center no-repeat;
 }
 .slider-reviews-button-prev:hover,
 .slider-reviews-button-next:hover {
@@ -1071,7 +1071,7 @@ body {
   height: 330px;
   left: 0;
   top: 0;
-  background: url("/img/01 1.png") 0 0/cover no-repeat;
+  background: url("../img/01 1.png") 0 0/cover no-repeat;
 }
 .footer__container {
   max-width: 1180px;
@@ -1091,14 +1091,14 @@ body {
   left: -100px;
   width: 135px;
   height: 135px;
-  background: url("/img/leaf.png") 0 0/cover no-repeat;
+  background: url("../img/leaf.png") 0 0/cover no-repeat;
 }
 .footer__container::after {
   top: -110px;
   right: -140px;
   width: 220px;
   height: 220px;
-  background: url("/img/berry.png") 0 0/cover no-repeat;
+  background: url("../img/berry.png") 0 0/cover no-repeat;
 }
 .footer__container span {
   bottom: 0;
@@ -1113,7 +1113,7 @@ body {
   right: -150px;
   width: 200px;
   height: 200px;
-  background: url("/img/leaf.png") 0 0/cover no-repeat;
+  background: url("../img/leaf.png") 0 0/cover no-repeat;
   transform: rotate(-100deg);
 }
 .footer__container span::after {
@@ -1121,7 +1121,7 @@ body {
   left: -190px;
   width: 260px;
   height: 250px;
-  background: url("/img/berry.png") 0 0/cover no-repeat;
+  background: url("../img/berry.png") 0 0/cover no-repeat;
   transform: rotate(-70deg);
 }
 @media (max-width: 1200px) {
@@ -1192,7 +1192,7 @@ body {
   height: 14px;
   top: 36px;
   left: 31.5px;
-  background: url(/img/phone-input.svg) center/cover no-repeat;
+  background: url("../img/phone-input.svg") center/cover no-repeat;
 }
 .form-order__phone {
   width: 100%;
